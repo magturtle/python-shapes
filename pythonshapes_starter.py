@@ -1,5 +1,6 @@
 from turtle import *
 import math
+import time
 
 # Name your Turtle.
 t = Turtle()
@@ -17,6 +18,7 @@ delay (50)
 showturtle()
 begin_fill()
 pendown()
+pensize (5)
 pencolor("red")
 forward(100)
 left(90)
@@ -31,19 +33,18 @@ color("violet")
 end_fill()
 penup()
 
-
+time.sleep(2)
 
 reset()
 
+time.sleep(1)
 begin_fill()
 pendown()
+pensize (5)
 pencolor("green")
-forward(100)
-left(120)
-forward(100)
-left(120)
-forward(100)
-left(120)
+for i in range(3):
+    forward(100)
+    left(120)
 
 color("yellow")
 end_fill()
